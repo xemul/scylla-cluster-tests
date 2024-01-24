@@ -1,4 +1,5 @@
 append_scylla_yaml: |
+  tablets_initial_scale_factor: 100
   experimental_features:
     - tablets
     - consistent-topology-changes
