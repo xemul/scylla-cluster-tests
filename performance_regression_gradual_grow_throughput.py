@@ -213,6 +213,7 @@ class PerformanceRegressionPredefinedStepsTest(PerformanceRegressionTest):  # py
             self.update_test_details(scylla_conf=True)
             summary_result = self.check_latency_during_steps(step=throttle_step)
             summary_result[throttle_step].update({"ops_rate": calculate_result["op rate"] * num_loaders})
+            self.log.debug("Step summary result: %s", summary_result)
             total_summary.update(summary_result)
             if workload.drop_keyspace:
                 self.drop_keyspace()

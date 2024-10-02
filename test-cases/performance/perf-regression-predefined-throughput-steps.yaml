@@ -44,7 +44,10 @@ instance_type_db: 'i4i.4xlarge'
 instance_type_loader: 'c7i.8xlarge'
 instance_type_monitor: 't3.small'
 use_capacity_reservation: true
-
+#force_run_iotune: true
+scylla_d_overrides_files: [
+  'configurations/performance/io_properties.yaml',
+]
 use_preinstalled_scylla: true
 
 user_prefix: 'perf-regression-predefined-steps'
