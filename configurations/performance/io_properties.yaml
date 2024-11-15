@@ -3,4 +3,4 @@ disks:
     read_iops: 318423
     read_bandwidth: 3103784960
     write_iops: 91883
-    write_bandwidth: 1720713216
+    write_bandwidth: 1220713216
